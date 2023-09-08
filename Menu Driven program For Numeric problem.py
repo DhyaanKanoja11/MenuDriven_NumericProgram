@@ -1,20 +1,22 @@
 #Menu Driven program For Numeric problems
 
 while True:
-    print("\n   ░▒▓▆▅▃▂▁NUMERIC OPERATIONS▁▂▃▅▆▓▒░   ")
+    print("\n  ░▒░▒░▒░▒ NUMERIC OPERATIONS ░▒░▒░▒░▒  ")
     print("1.  Time Into Minutes And Hours")
     print("2.  Temperature Conversion From Celsius To Fahrenheit")
     print("3.  Average")
     print("4.  Square And Root Of A Number ")
-    print("5.  Area Of Triangle and Perimeter Of Triangle")
-    print("6.  Area Of Rectangle And Perimeter Of Rectangle")
+    print("5.  Area Of Rectangle and Perimeter Of Rectangle")
+    print("6.  Area Of Triangle And Perimeter Of Triangle")
     print("7.  Area Of Square And Perimeter Of Square")
     print("8.  Simple interest and Amount Payable")
-    print("9.  Conversion Of INR to EUR")
+    print("9.  Conversion Of INR to EUROS")
     print("10. Conversion Of INR to USD")
-    print("11. Conversion Of INR to GBP") 
+    print("11. Conversion Of INR to POUNDS") 
     print("12. Factorial Of A Number")
-    print("13. EXIT")
+    print("13. Find The Even Numbers Between A Particular Range")
+    print("14. Find The Odd Numbers Between A Particular Range")
+    print("15. EXIT")
     c=int(input("Enter Your Choice(1-12): "))
 
 #Making The Operations Work
@@ -57,19 +59,9 @@ while True:
         root=numb**0.5
         print ("Square Of the Number: ",sq,"\nSquare Root Of The Number :",root)
 
-#Operation -5 {Area of a triangle & perimeter of a triangle}
+#Operation -5 {Area of a Rectangle & Perimeter of a rectangle}
 
     elif c==5:
-        print ("\nAREA OF A TRIANGLE & PERIMETER OF A TRIANGLE\n")
-        base=float(input('\nEnterBase Length:'))
-        height=float(input('Height:'))
-        area=(base*height)/2
-        perimeter=(base + height)*2
-        print("Area Of Triangle: ",area,"\nPerimeter Of Triangle is: ",perimeter )
-
-#Operation -6 {Area Of Rectangle And Perimeter Of Rectangle}
-
-    elif c==6:
         print ("\nAREA OF RECTANGLE AND PERIMETER OF RECTANGLE\n")
         l1= float(input("Enter Length Of 1st Side: "))
         l2= float(input("Enter Length Of 2nd Side: "))
@@ -77,6 +69,49 @@ while True:
         arearectangle =(l1*h)+(l2*h)
         perimeterrectangle= (l1+l2)*2
         print("Area Of Rectangle: ",arearectangle,"Perimeter Of Rectangle: ",perimeterrectangle)
+
+#Operation -6 {Area Of Triangle And Perimeter Of Triangle}
+
+    elif c==6:
+        while True:
+            #MENU for Selecting type of triangle
+            print('\nNOTE:ENTER THE HEIGHT,LENGTH IN ONLY INTEGERAL FORMAT\n')
+            print('\n > Enter 1 For Right angle Triangle\n> Enter 2 For Equilateral Triangle\n> Enter 3 For Isosceles Triangle')
+            a=int(input('\nEnter The Code Of Your Choice:  '))
+
+            #Area And Perimeter OF Right Angled Triangle
+            if a== 1 :
+                print('Area and Perimeter of Right angle Triangle')
+                d=int(input('Enter Base Lenght: '))
+                b=int(input('Enter Height Lenght'))
+                BR=((0.5*d*b)*100)//1
+                B=BR/100    
+                print('Area = ',B)
+                c=round(((b**2) + (d**2))**0.5,2)
+                print('Perimeter = ',round((d+b+c),2))
+
+            #Area and Perimeter Of Equilateral Triangle
+            elif a== 2 :
+                print('Area and Perimeter Of Equilateral Triangle')
+                ez=int(input('Enter The Lenght Of Side: '))
+                AR=(((3**0.5)/4)*(ez**2)*100)//1
+                Ar=AR/100    
+                print('Area =',Ar)
+                print('Perimeter = ', (3*ez))
+
+            #Area and Perimeter Of Isosceles Triangle
+            elif a== 3 :
+                print('Area and Perimeter of Isosceles Triangle')
+                f=int(input('Enter Lenght of Base:',))
+                g=int(input('Enter Lenght of Common Side: '))
+                h=(((f/2)**2)*(g**2))
+                CR=(((1/2)(h)(g))*100)//1
+                C=CR/100
+                print('Area = ,'((1/2)(h)(g)))
+                print('Perimeter = ', f+g+h)  
+
+            else:
+                print('Invalid Code Entered')
 
 #Operation -7 {Area Of Square And Perimeter Of Square}
 
@@ -101,7 +136,7 @@ while True:
 #Operation -9 {Conversion of INR to EUROS}
 
     elif c==9:
-        print("\nCONVERSION FROM INR TO EUR \n")
+        print("\nCONVERSION FROM INR TO EUROS \n")
         amountinr=float(input("Amount in Rupees:"))
         euros=round(amountinr*0.011,2)
         print(amountinr,"IN EUROS:",euros)
@@ -117,7 +152,7 @@ while True:
 #Operation -11 {Conversion of INR to USD}
 
     elif c==11:
-        print("\nCONVERSION FROM INR TO GBP \n")
+        print("\nCONVERSION FROM INR TO POUNDS \n")
         amountinr2=float(input("Amount in Rupees:"))
         POUNDS=round(amountinr2*0.0096,2)
         print(amountinr2,"IN POUNDS:",POUNDS)
@@ -134,16 +169,39 @@ while True:
                 factorial=factorial * i
             print (f"The Factorial Of {num} is {factorial}")
 
-#Operation -13 {EXIT}
+#Operation -13 {Finding The Even Number Between A Particular Range}
+
     elif c==13:
+        print ("FINDING EVEN NUMBER BETWEEN A PARTICULAR RANGE")
+        a=int(input('Enter First Number of the Range:  '))
+        b=int(input('Enter Second Number of the Range:  '))
+        print('The Even Numbers between', a ,'and', b ,'are:')
+        for x in range(a,b+1) :
+            if x%2==0 :
+                print(x)
+
+#Operation -14 {Finding The Even Number Between A Particular Range}
+
+    elif c==14:
+        print ("FINDING ODD NUMBER BETWEEN A PARTICULAR RANGE")
+        ab=int(input('Enter First Number of the Range:  '))
+        bc=int(input('Enter Second Number of the Range:  '))
+        print('The ODD Numbers between', ab ,'and', bc ,'are:')
+        for u in range(ab,bc+1) :
+            if u%2!=0 :
+                print(u)
+
+
+#Operation -15 {EXIT}
+    elif c==15:
         print("THANK YOU")
-        print("EXITING")
+        print("$$$EXITING$$$")
         break;
 
 #ELSE
     else:
         print("*******Invalid Choice*******")
-        print("\n Press Any Key To Continue......................")
+        print("Press Any Key To Continue......................")
         returntomenu=input()
 
 #END OF THE CODE
