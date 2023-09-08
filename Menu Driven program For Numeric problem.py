@@ -10,9 +10,9 @@ while True:
     print("6.  Area Of Rectangle And Perimeter Of Rectangle")
     print("7.  Area Of Square And Perimeter Of Square")
     print("8.  Simple interest and Amount Payable")
-    print("9.  Conversion Of INR to EUROS")
+    print("9.  Conversion Of INR to EUR")
     print("10. Conversion Of INR to USD")
-    print("11. Conversion Of INR to POUNDS") 
+    print("11. Conversion Of INR to GBP") 
     print("12. Factorial Of A Number")
     print("13. EXIT")
     c=int(input("Enter Your Choice(1-12): "))
@@ -101,7 +101,7 @@ while True:
 #Operation -9 {Conversion of INR to EUROS}
 
     elif c==9:
-        print("\nCONVERSION FROM INR TO EUROS \n")
+        print("\nCONVERSION FROM INR TO EUR \n")
         amountinr=float(input("Amount in Rupees:"))
         euros=round(amountinr*0.011,2)
         print(amountinr,"IN EUROS:",euros)
@@ -117,7 +117,7 @@ while True:
 #Operation -11 {Conversion of INR to USD}
 
     elif c==11:
-        print("\nCONVERSION FROM INR TO POUNDS \n")
+        print("\nCONVERSION FROM INR TO GBP \n")
         amountinr2=float(input("Amount in Rupees:"))
         POUNDS=round(amountinr2*0.0096,2)
         print(amountinr2,"IN POUNDS:",POUNDS)
