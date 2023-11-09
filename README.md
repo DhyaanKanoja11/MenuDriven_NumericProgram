@@ -2,7 +2,6 @@
 
 Welcome to the Numeric Operations Menu, a Python-based menu-driven program for solving various numeric problems. This program is designed to make complex calculations simple. Whether you're a student, engineer, or just someone who needs quick calculations, this program has you covered.
 
-
 ## Table of Contents
 - [Introduction](#introduction)
 - [Getting Started](#getting-started)
@@ -12,7 +11,6 @@ Welcome to the Numeric Operations Menu, a Python-based menu-driven program for s
 - [Numeric Operations](#numeric-operations)
 - [Contributing](#contributing)
 - [Contact](#contact)
-
 - [Good Quote](#good-quote)
 
 ## Introduction
@@ -39,71 +37,54 @@ To get started with the Numeric Operations Menu, follow these simple steps:
    git clone https://github.com/DhyaanKanoja11\NumericOperationsMenu.git 
    ```
 
-
-  > Once the cloning process is complete, navigate into the project directory:
-
-   ```bash
-        cd  NumericOperationsMenu
-   ```
+Once the cloning process is complete, navigate into the project directory:
+``` bash
+cd  NumericOperationsMenu
+```
 
 Now you have a local copy of the Numeric Operations Menu on your machine and are ready to start using it!
 
 Usage
 To use the Numeric Operations Menu, run the Python script (numeric_operations_menu.py) in your terminal or IDE. Follow the on-screen instructions to select an operation and provide the necessary input.
 
-# Numeric Operations
-1. Time Into Minutes and Hours:
- Converts time in minutes into hours and minutes.
+Numeric Operations
+Time Into Minutes and Hours: Converts time in minutes into hours and minutes.
 
-2. Temperature Conversion From Celsius To Fahrenheit:
-Converts temperature from Celsius to Fahrenheit.
+Temperature Conversion From Celsius To Fahrenheit: Converts temperature from Celsius to Fahrenheit.
 
-3. Average:
- Calculates the average of a set of observations.
+Average: Calculates the average of a set of observations.
 
-4. Square and Root of a Number :
-    Computes the square and square root of a number.
+Square and Root of a Number: Computes the square and square root of a number.
 
-5. Area of Rectangle and Perimeter of Rectangle :  Calculates the area and perimeter of a rectangle.
+Area of Rectangle and Perimeter of Rectangle: Calculates the area and perimeter of a rectangle.
 
-6. Area of Triangle and Perimeter of Triangle:
-Provides options for calculating the area and perimeter of different types of triangles (right angle, equilateral, and isosceles).
+Area of Triangle and Perimeter of Triangle: Provides options for calculating the area and perimeter of different types of triangles (right angle, equilateral, and isosceles).
 
-7. Area of Square and Perimeter of Square :
-Computes the area and perimeter of a square.
+Area of Square and Perimeter of Square: Computes the area and perimeter of a square.
 
-8. Simple Interest and Amount Payable :
-Calculates simple interest and the amount payable.
+Simple Interest and Amount Payable: Calculates simple interest and the amount payable.
 
-9. Conversion of INR to EUROS:
-Converts Indian Rupees to Euros.
+Conversion of INR to EUROS: Converts Indian Rupees to Euros.
 
-10. Conversion of INR to USD:
-Converts Indian Rupees to US Dollars.
+Conversion of INR to USD: Converts Indian Rupees to US Dollars.
 
-11. Conversion of INR to POUNDS:
-Converts Indian Rupees to British Pounds.
+Conversion of INR to POUNDS: Converts Indian Rupees to British Pounds.
 
-12.Factorial of a Number:
- Calculates the factorial of a number
+Factorial of a Number: Calculates the factorial of a number.
 
-13. Finding Even Numbers Between a Range:
- Lists even numbers within a specified range
+Finding Even Numbers Between a Range: Lists even numbers within a specified range.
 
-14. Finding Odd Numbers Between a Range:
-Lists odd numbers within a specified range.
+Finding Odd Numbers Between a Range: Lists odd numbers within a specified range.
 
-15. Exit:
-Quits the program.
+Exit: Quits the program.
 
-
-# Contributing
+Contributing
 If you want to contribute to this project, feel free to submit pull requests or open issues. Check out the CONTRIBUTING guide for more details.
 
-## Contact
+Contact
 If you have any questions, issues, or suggestions, please feel free to reach out to me:
 
->Email: dhyaandk11@gmail.com
+Email: dhyaandk11@gmail.com
 Connect with Me
 You can also find me on social media:
 
@@ -111,8 +92,5 @@ YouTube
 Reddit
 Instagram
 GitHub
-License
-
-# QUOTE
-
-```Coding is not just about solving problems; it's about creating and exploring possibilities." - Unknown```
+Good Quote
+"Coding is not just about solving problems; it's about creating and exploring possibilities." - Unknown
